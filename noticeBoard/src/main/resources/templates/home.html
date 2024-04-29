@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" th:href="@{/home.css}">
+	<title>Home</title>
+</head>
+<body>
+
+
+	<div class="container">
+		<nav class="nav">
+			<div class="Logo">InfoBoard</div>
+			<div class="elements">
+				<ul class="navele">
+					<li class="pages"><a th:href="@{/home}"> Home</a>  </li>
+					<li class="pages"><a th:href="@{/post}">Post</a>  </li>
+				</ul>
+			</div>
+			
+		</nav>
+		
+	</div>
+	<div  th:each = "entry : ${entries}" class="content">
+		<div class=username>Posted by <span  th:text="${user}">username</span></div>
+		<h2 class="title" th:text="${entry.title}"></h2>
+		<div class="describ" th:text="${entry.describ}"> </div>
+		<div class="contact">Contact info:<span th:text="${entry.contact}"></span></div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	background-color: #3F3A3A;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.form{
+	border: 1px solid inherit;
+	border-radius: 20px;
+	padding: 40px;
+	background-color: #EFDEDE;
+}
+.title{
+	color: #3F3A3A;
+	font-size: 30px;
+	font-family: calibri;
+}
+
+.field{
+	margin: 10px;
+	padding: 10px;
+	border-radius: 30px;
+	width:250px;
+}
+
+.submit{
+	padding: 10px;
+	margin: 10px;
+	width: 80px;
+	border-radius: 15px;
+}
+.link a{
+	text-decoration: none;
+}

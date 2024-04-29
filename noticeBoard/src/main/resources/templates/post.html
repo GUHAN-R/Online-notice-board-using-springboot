@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" th:href="@{form.css}">
+	<title>Post</title>
+</head>
+<body>
+
+	<div class="container">
+		
+		<form class="form" method="GET" action="/noticesave">
+			<h3 class="title">Post</h3>
+			<input class="field" type="text" name="title" placeholder="Title"><br>
+			<textarea class="field" name="describ" placeholder="Description" rows="5" cols="50"></textarea><br>
+			<input class="field" type="email" name="contact" placeholder="Email"><br>
+			<input class="submit" type="submit" name="submit" value="Submit"><br>
+		</form>
+
+	</div>
+
+</body>
+</html>
